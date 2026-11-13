@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A private preparation workspace for an AFIT Computer Science SIWES defense.">
+  <meta name="theme-color" content="#142332">
+  <title>Overview · AFIT SIWES Defense Studio</title>
+  <link rel="icon" href="./assets/favicon.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="shell" class="app-shell">
+    <aside id="sidebar" class="sidebar" aria-label="Workspace">
+      <a id="brand" class="brand" href="#overview"></a>
+      <nav id="navigation" class="navigation" aria-label="Study sections"></nav>
+      <div id="sidebar-profile" class="sidebar-profile"></div>
+    </aside>
+    <button class="sidebar-shade" type="button" tabindex="-1" aria-label="Close navigation" data-action="close-menu"></button>
+    <div class="work-area">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="menu-toggle" class="icon-button menu-toggle" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation" data-action="menu"></button>
+          <div id="breadcrumb" class="breadcrumb"></div>
+        </div>
+        <div id="topbar-meta" class="topbar-meta"></div>
+      </header>
+      <main id="main-content" class="main-content" tabindex="-1">
+        <p class="loading">Loading your defense workspace…</p>
+        <noscript>This workspace requires JavaScript to run practice sessions and save study progress.</noscript>
+      </main>
+    </div>
+  </div>
+  <dialog id="editor" aria-labelledby="editor-title"><div id="editor-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input type="file" id="backup-file" accept=".json,application/json" hidden>
+</body>
+</html>
